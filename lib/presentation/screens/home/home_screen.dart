@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widget_formato/config/menu/menu_items.dart';
+import 'package:widget_formato/presentation/screens/buttons/buttons_screen.dart';
+import 'package:widget_formato/presentation/screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -48,14 +51,14 @@ class _CustomListTile extends StatelessWidget {
       trailing: Icon(Icons.arrow_forward_ios_rounded,color:  colors.primary,),
       title: Text(menuItem.subTitle),
       onTap:(){
-        //Navigator.of(context).push(
-        //MaterialPageRouter(
-        //builder: (context)=> const ButtonsScreen(),
-        //),
-        //);
-        //Navigator.pushNamed(context, menuItem.link);
-        //context.pushNamed(CardsScreen.name);
-        //context.push(menuItem.link);
+        Navigator.of(context).push(
+        MaterialPageRoute(
+        builder: (context)=> const ButtonsScreen(),
+        ),
+        );
+        Navigator.pushNamed(context, menuItem.link);
+        context.pushNamed(CardsScreen.name);
+        context.push(menuItem.link);
       }
     );
   }

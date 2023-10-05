@@ -74,6 +74,20 @@ const appMenuItems = <MenuItem>[
     icon: Icons.list_alt_rounded
   ),
 
+    MenuItem(
+    title: 'Counter River ', 
+    subTitle: 'Counter River class', 
+    link: '/counter-river', 
+    icon: Icons.countertops_sharp
+  ),
+
+    MenuItem(
+    title: 'Cambiar Tema', 
+    subTitle: 'Cambiar tema de la aplicacion', 
+    link: '/theme-charger', 
+    icon: Icons.color_lens_outlined
+  ),
+
 
 ];
 

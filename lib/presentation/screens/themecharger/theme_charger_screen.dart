@@ -11,7 +11,7 @@ class ThemeChargerScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
 
-    final isDarkmode = ref.watch (themeNotifierProvider).isDarkmode;
+    final isDarkmode = ref.watch(themeNotifierProvider).isDarkmode;
 
 
     return Scaffold(
@@ -23,7 +23,7 @@ class ThemeChargerScreen extends ConsumerWidget {
             //ref.read(isDarkmodeProvider.notifier)
             //.update((state)=> !state);
             ref.read(themeNotifierProvider.notifier)
-            .toggleDarkMode;
+            .toggleDarkMode();
           },)
         ],
       ),

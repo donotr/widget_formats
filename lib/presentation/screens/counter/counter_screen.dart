@@ -12,7 +12,7 @@ class CounterScreen extends ConsumerWidget{
   @override
   Widget build (BuildContext context, WidgetRef ref){
     final int clickCounter = ref.watch(counterProvider);
-    final bool isDarkmode = ref.watch ( isDarkmodeProvider);
+    final bool isDarkmode = ref.watch(isDarkmodeProvider);
 
     return Scaffold(
       appBar: AppBar(
